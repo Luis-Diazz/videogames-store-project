@@ -1,0 +1,299 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+:root {
+    --blue: #4618AC;
+    --dark-blue: #24105A;
+    /* --submenu-blue: #150542; */
+    --submenu-blue: #0f003a;
+    --yellow: rgb(248, 207, 24);
+    --dark-yellow: rgb(136, 138, 24);
+}
+button {
+    cursor: pointer;
+}
+/* ------------------HEADER------------------------- */
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--submenu-blue);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.logo-container .logo-tittle {
+    width: 60vw;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    padding-top: 15px;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    color: #ddd;
+}
+.fa-dice-d20 {
+    padding: 0 2vw;
+    color: rgb(248, 207, 24);
+}
+.logo-items {
+    /* width: 30vw; */
+    display: flex;
+    align-items: center;
+}
+.logo-items .fab {
+    font-size: 30px;
+    padding: 0 1vw;
+}
+.logo-items .fa-grip-lines-vertical {
+    font-size: 40px;
+    padding: 0 2vw;
+}
+.logo-items .fa-playstation {
+    color: #ccc;
+}
+.logo-items .fa-xbox {
+    color: rgb(0, 161, 0);
+}
+.logo-items a{
+    color: #ddd;
+    padding: 0 1vw;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.logo-items a:hover, .logo-items .fa-shopping-cart:hover {
+    color: var(--yellow);
+}
+.logo-items .fa-shopping-cart {
+    font-size: 20px;
+    padding: 1vw;
+}
+
+/* -----------------NAV-BAR------------------------ */
+
+html {
+    overflow-x: hidden;
+}
+nav {
+    height: 50px;
+    background-color: var(--blue);
+    font-family: 'Roboto', sans-serif;
+}
+.nav-items-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+.nav-item {
+    width: 20%;
+    height: 100%;
+    background-color: var(--dark-blue);
+    text-align: center;
+    font-size: 17px;
+    color: #ddd;
+    cursor: pointer;
+}
+.nav-item div {
+    font-weight: 900;
+    transition: all 1s ease;
+    width: 19.71vw; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item div a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    align-self: center;
+    height: 50px;
+    padding: 15px;
+    color: #ddd;
+}
+.fa-angle-down {
+    padding-left: 10px ;
+}
+.submenu {
+    background-color: var(--dark-blue);
+    position: absolute;
+    width: 19.71vw;
+    font-size: 14px;
+    display: none;
+    transition: all .5s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 100;
+}
+.submenu li {
+    transition: all .5s ease;
+}
+.submenu li a {
+    text-decoration: none;
+    color: #ddd;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.submenu li a:hover {
+    color: var(--yellow);
+}
+.submenu li:hover {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+.nav-item div:hover {
+    background-color: var(--submenu-blue);
+    color:rgb(238, 234, 13);
+}
+.nav-item div a:hover {
+    background-color: var(--submenu-blue);
+    color:rgb(238, 234, 13);
+}
+.submenu li:hover  {
+    background-color: var(--dark-blue);
+    color:rgb(238, 234, 13);
+}
+.nav-item div:hover + ul , .submenu:hover, .nav-item:hover {
+    background-color: var(--submenu-blue);
+    display: block;
+    z-index: 100;
+}
+
+/* ------------------BODY------------------- */
+
+body {
+    background-color: var(--blue);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+article h1 {
+    width: 90vw;
+    font-size: 40px;
+    color: #ccc;
+    padding: 30px 2vw;
+    margin: auto;
+}
+article p {
+    font-size: 16px;
+    color: var(--yellow);
+    margin: auto;
+    padding: 10px 2vw;
+    display: block;
+    width: 90vw;
+    background-color: var(--dark-blue);
+}
+.grid-container {
+    margin: 30px 7vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: minmax(50px, auto) 350px; */
+    grid-auto-flow: row;
+    grid-auto-rows: 450px;
+    grid-gap: 15px;
+    justify-content: center;
+}
+.item {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+.gameName {
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 0;
+    /* padding-top: 10px; */
+}
+.gamePrice {
+    color: #777;
+    width: 100%;
+    padding-top: 0;
+    /* margin-bottom: 7px; */
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.item img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+.item button {
+    background-color: var(--yellow);
+    border: none;
+    font-weight: 600 ;
+    margin-bottom: 10px;
+    width: 60%;
+    height: 8%;
+    margin: auto;
+}
+.item button:hover {
+    background-color: var(--dark-yellow);
+}
+/* --------------------FOOTER----------------- */
+.grid-footer {
+    padding: 20px 0;
+    background-color: var(--submenu-blue);
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 32.5vw);
+    grid-auto-flow: row;
+    grid-gap: 10px;
+}
+.grid-footer *{
+    text-align: center;
+}
+.grid-footer h5 {
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+    font-size: 15px;
+}
+.grid-footer p {
+    color: #fff;
+    font-size: 13px;
+}
+.grid-footer i {
+    font-size: 20px;
+}
+.grid-footer i a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+.grid-footer p:nth-child(2) {
+    grid-column: 1/span 3;
+    grid-row: 2/3;
+}
+.grid-footer p:nth-child(3) {
+    grid-column: 1/span 3;
+    grid-row: 3/4;
+}
+.grid-footer p:nth-child(4) {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+}
