@@ -1,0 +1,191 @@
+{
+    "gta5": {
+        "img": "https://lh3.googleusercontent.com/LPtqVepdcE0EMxAHxxWh89JuHMCw_MQJspi4JAhyFVrMky0rE6QsKivtqqwJb9phrtnnzixLvs4Ljhcf3ipNvn79_Q=w640-h400-e365-rj-sc0x00ffffff",
+        "name": "Grand Theft Auto V",
+        "platform": "all",
+        "clasification": "adults",
+        "gender": "action",
+        "best-seller": true,
+        "price": "34"
+    },
+    "minecraft": {
+        "img": "https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png",
+        "name": "Minecraft",
+        "platform": "all",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": true,
+        "price": "25" 
+    },
+    "godOfWar4": {
+        "img": "https://fondosmil.com/fondo/30544.jpg",
+        "name": "God of War",
+        "platform": "PlayStation",
+        "clasification": "adults",
+        "gender": "action",
+        "best-seller": true,
+        "price": "29"
+    },
+    "halo5": {
+        "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2015/10/529904-analisis-halo-5-guardians.jpg?itok=xLwVo_i-",
+        "name": "Halo 5: Guardians",
+        "platform": "XBOX",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": true,
+        "price": "20" 
+    },
+    "theLastOfUs": {
+        "img": "https://www.xtrafondos.com/wallpapers/vertical/the-last-of-us-remasterizado-511.jpg",
+        "name": "The last of us",
+        "platform": "PlayStation",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": true,
+        "price": "19" 
+    },
+    "gears5": {
+        "img": "https://picfiles.alphacoders.com/364/thumb-364996.jpg",
+        "name": "Gears 5",
+        "platform": "XBOX",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": true,
+        "price": "26" 
+    },
+    "haloInfinte": {
+        "img": "https://i1.wp.com/www.gamerfocus.co/wp-content/uploads/2020/05/Halo-Infinite-9.jpg?fit=1280%2C720&ssl=1",
+        "name": "Halo Infinite",
+        "platform": "XBOX",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": true,
+        "price": "34" 
+    },
+    "rocketLeague": {
+        "img": "https://www.muycomputer.com/wp-content/uploads/2019/05/RocketLeague.jpg",
+        "name": "Rocket League",
+        "platform": "all",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": true,
+        "price": "free" 
+    },
+    "warzone": {
+        "img": "https://www.hd-tecnologia.com/imagenes/articulos/2021/04/El-fin-de-Call-of-Duty-Warzone-sera-este-21-de-abril-segun-Activision.jpg",
+        "name": "Call of Duty: Warzone",
+        "platform": "all",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": true,
+        "price": "free"
+    },
+    "justDance": {
+        "img": "https://webediaespana.delivery.content-hub.app/image/66/82/04/5fae6d6e4bd22fa836/original/just-dance-21.jpeg",
+        "name": "Just Dance 2021",
+        "platform": "all",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": false,
+        "price": "19" 
+    },
+    "overcooked": {
+        "img": "https://www.nintendo.com//content/dam/noa/es_LA/games/switch/o/overcooked-all-you-can-eat-switch/overcooked-all-you-can-eat-switch-hero.jpg",
+        "name": "Overcooked",
+        "platform": "all",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": false,
+        "price": "9" 
+    },
+    "sackboy": {
+        "img": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/10/sackboy-big-adventure-2097519.jpg",
+        "name": "Sackboy",
+        "platform": "PlayStation",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": true,
+        "price": "9" 
+    },
+    "legoMovie2": {
+        "img": "https://image.api.playstation.com/cdn/UP1018/CUSA13504_00/jrtGrnEc8wI3GUnfJHzOBij4JKvmLv0o.png",
+        "name": "The Lego Movie 2",
+        "platform": "all",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": false,
+        "price": "14" 
+    },
+    "crashBandicoot": {
+        "img": "https://as.com/meristation/imagenes/2021/03/14/noticias/1615731883_185671_1615731922_noticia_normal_recorte1.jpg",
+        "name": "Crash Bandicoot",
+        "platform": "PlayStation",
+        "clasification": "familiar",
+        "gender": "normal",
+        "best-seller": true,
+        "price": "24" 
+    },
+    "avengers": {
+        "img": "https://image.api.playstation.com/vulcan/img/rnd/202108/0309/RmnDs8XgzGwMUfneQbkC7huM.png",
+        "name": "Avengers",
+        "platform": "all",
+        "clasification": "familiar",
+        "gender": "action",
+        "best-seller": false,
+        "price": "29" 
+    },
+    "fortnite": {
+        "img": "https://i.blogs.es/ece53f/fortnite-04/1366_2000.jpg",
+        "name": "Fortnite",
+        "platform": "all",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": true,
+        "price": "free" 
+    },
+    "apex": {
+        "img": "https://image.api.playstation.com/vulcan/ap/rnd/202010/1512/8ThoZrE519SBuOMpYKFunYS0.png?w=440",
+        "name": "Apex",
+        "platform": "all",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": false,
+        "price": "free" 
+    },
+    "destiny2": {
+        "img": "https://www.gamerfocus.co/wp-content/uploads/2020/08/Destiny-2-6.jpeg",
+        "name": "Destiny 2",
+        "platform": "all",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": false,
+        "price": "free" 
+    },
+    "finalFantasy7": {
+        "img": "https://e-sport.tech/wp-content/uploads/2019/09/final-fantasy-7-rmk.jpg",
+        "name": "Final Fantasy VII",
+        "platform": "PlayStation",
+        "clasification": "teens",
+        "gender": "action",
+        "best-seller": false,
+        "price": "free" 
+    },
+    "warface": {
+        "img": "https://www.zonammorpg.com/wp-content/uploads/2020/01/1-1620x800.jpg",
+        "name": "Warface",
+        "platform": "PlayStation",
+        "clasification": "familiar",
+        "gender": "action",
+        "best-seller": false,
+        "price": "free" 
+    },
+    "h1z1": {
+        "img": "https://media.vandal.net/m/36261/h1z1-2018522101945_5.jpg",
+        "name": "H1Z1",
+        "platform": "all",
+        "clasification": "adults",
+        "gender": "action",
+        "best-seller": false,
+        "price": "free" 
+    }
+}

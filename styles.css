@@ -1,0 +1,538 @@
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+:root {
+    --blue: #4618AC;
+    --dark-blue: #24105A;
+    /* --submenu-blue: #150542; */
+    --submenu-blue: #0f003a;
+    --yellow: rgb(248, 207, 24);
+    --dark-yellow: rgb(136, 138, 24);
+}
+button {
+    cursor: pointer;
+}
+/* ------------------HEADER------------------------- */
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--submenu-blue);
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.logo-container .logo-tittle {
+    width: 60vw;
+    font-size: 35px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
+    padding-top: 15px;
+    padding-left: 5vw;
+    padding-right: 3vw;
+    color: #ddd;
+}
+.fa-dice-d20 {
+    padding: 0 2vw;
+    color: rgb(248, 207, 24);
+}
+.logo-items {
+    /* width: 30vw; */
+    display: flex;
+    align-items: center;
+}
+.logo-items .fab {
+    font-size: 30px;
+    padding: 0 1vw;
+}
+.logo-items .fa-grip-lines-vertical {
+    font-size: 40px;
+    padding: 0 2vw;
+}
+.logo-items .fa-playstation {
+    color: #ccc;
+}
+.logo-items .fa-xbox {
+    color: rgb(0, 161, 0);
+}
+.logo-items a{
+    color: #ddd;
+    padding: 0 1vw;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+.logo-items a:hover, .logo-items .fa-shopping-cart:hover {
+    color: var(--yellow);
+}
+.logo-items .fa-shopping-cart {
+    font-size: 20px;
+    padding: 1vw;
+}
+
+/* -----------------NAV-BAR------------------------ */
+
+html {
+    overflow-x: hidden;
+}
+nav {
+    height: 50px;
+    background-color: var(--blue);
+    font-family: 'Roboto', sans-serif;
+}
+.nav-items-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+.nav-item {
+    width: 20%;
+    height: 100%;
+    background-color: var(--dark-blue);
+    text-align: center;
+    font-size: 17px;
+    color: #ddd;
+    cursor: pointer;
+}
+.nav-item div {
+    font-weight: 900;
+    transition: all 1s ease;
+    width: 19.71vw; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item div a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    align-self: center;
+    color: #ddd;
+    height: 50px;
+    padding: 15px;
+}
+.fa-angle-down {
+    padding-left: 10px ;
+}
+.submenu {
+    background-color: var(--dark-blue);
+    position: absolute;
+    width: 19.71vw;
+    font-size: 14px;
+    display: none;
+    transition: all .5s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 100;
+}
+.submenu li {
+    transition: all .5s ease;
+}
+.submenu li a {
+    text-decoration: none;
+    color: #ddd;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.submenu li a:hover {
+    color: var(--yellow);
+}
+.submenu li:hover {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: var(--blue);
+    color: var(--yellow);
+}
+.nav-item div:hover {
+    background-color: var(--submenu-blue);
+    color:rgb(238, 234, 13);
+}
+.nav-item div a:hover {
+    background-color: var(--submenu-blue);
+    color:rgb(238, 234, 13);
+}
+.submenu li:hover  {
+    background-color: var(--dark-blue);
+    color:rgb(238, 234, 13);
+}
+.nav-item div:hover + ul , .submenu:hover, .nav-item:hover {
+    background-color: var(--submenu-blue);
+    display: block;
+    z-index: 100;
+}
+
+
+/* -------------------BODY---------------------- */
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-template-areas: "main main main aside" "footer footer footer footer"   ;
+}
+/* ------------------MAIN---------------------- */
+.grid-main {
+    grid-area: main;
+    background-color: var(--blue);
+}
+/* -------SWIPER-PART--------- */
+.swiper-part {
+    background-color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 3vw;
+    display: grid;
+    grid-template-rows: repeat(2, 150px);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.swiper-tittle {
+    font-size: 40px;
+    color: #ddd;
+    text-align: end;
+    padding-right: 2vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: flex-end;
+}
+.swiper-paragraph {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: var(--yellow);
+    font-size: 17px;
+    text-align: end;
+    padding-right: 2vw;
+    align-self: flex-start;
+    padding-top: 10px;
+}
+/* ---SWIPER-PURE--- */
+.swiper {
+    border-radius: 20px;
+    grid-column: 2/4;
+    grid-row: 1/3;
+    width: 90%;
+    height: 90%;
+    z-index: 10;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: var(--blue);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #999;
+/* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----SWIPER-PERSONALIZATION----- */
+
+.swiper-slide img {
+    opacity: 70%;
+    z-index: 1;
+}
+.game-description {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(70, 24, 172, 0.7);
+    align-self: flex-end;
+    z-index: 9;
+    font-size: 19px;
+    line-height: 25px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.game-description button:hover {
+    background-color: var(--dark-yellow);
+}
+.game-description .game-description-text a {
+    color: #999;
+    font-size: 16px;
+    font-weight: 600;
+}
+.game-description .game-description-text b {
+    color: rgb(0, 153, 255);
+    font-size: 18px;
+    font-weight: 900;
+}
+.game-description p {
+    color: #fff;
+    position: relative;
+    text-align: left;
+    padding: 0 4vw;
+    z-index: 10;
+}
+.game-description button {
+    width: 200px;
+    height: 30px;
+    padding: 0 2vw;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--yellow);
+    border: none;
+}
+/* ---------SELECTIONS--------- */
+.selection {
+    margin: 30px 4vw;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(50px, auto) 350px;
+    grid-auto-flow: row;
+    grid-auto-rows: 350px;
+    grid-gap: 10px;
+    justify-content: center;
+}
+.selection h3 {
+    grid-column: 1/span 4;
+    grid-row: 1/2;
+    font-size: 30px;
+    color: #ddd;
+    margin-left: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.selection-item {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+.selection-item .gameName {
+    color: #fff;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+.selection-item .gamePrice {
+    color: #777;
+    width: 100%;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.selection-item img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    padding-top: 10px;
+    overflow: hidden;
+
+}
+.selection-item button {
+    background-color: var(--yellow);
+    border: none;
+    font-weight: 600 ;
+    margin-bottom: 10px;
+    width: 60%;
+    height: 8%;
+    margin: auto;
+}
+.selection-item button:hover {
+    background-color: var(--dark-yellow);
+}
+.showMoreButton-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    width: max-content;
+    margin: 20px auto;
+}
+.showMoreButton-container button {
+    background-color: var(--yellow);
+    font-weight: 600;
+    height: 30px;
+    width: 150px;
+}
+.showMoreButton-container button:hover {
+    background-color: var(--dark-yellow);
+}
+.showAllLink {
+    color: #fff;
+    height: fit-content;
+    text-align: center;
+    margin-top: 10px;
+}
+.no-display-class {
+    display: none;
+}
+.display-class {
+    display: flex;
+}
+
+/* ------------------------ASIDE--------------------------- */
+.grid-aside {
+    grid-area: aside;
+    margin-top: 20px;
+    margin-right: 3vw;
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.questions-part {
+    background-color: #fff;
+}
+.questions-part h3 {
+    background-color: var(--dark-blue);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+.questions-part div {
+    background-color: rgb(248, 207, 24, .9);
+    padding: 15px 0;
+    height: 50px;
+    max-height: fit-content;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.questions-part div:hover {
+    height: 300px;
+    opacity: .5;
+}
+.questions-part div h4 {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.questions-part div h4 i{
+    padding-bottom: auto;
+    padding-top: auto;
+}
+.questions-part div p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 15px;
+}
+.filling-part {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px;
+    grid-auto-flow: row;
+    grid-auto-rows: 250px;
+    grid-gap: 20px;
+    align-items: center;
+}
+.filling-part div {
+    height: 100%;
+    background-color: var(--blue);
+    display: flex;
+}
+.filling-part div img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------FOOTER----------- */
+.grid-footer {
+    padding: 20px 0;
+    grid-area: footer;
+    background-color: var(--submenu-blue);
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 32.5vw);
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    justify-items: center;
+}
+.grid-footer *{
+    text-align: center;
+}
+.grid-footer h5 {
+    grid-column: 1/span 3;
+    grid-row: 1/2;
+    font-size: 15px;
+}
+.grid-footer p {
+    background-color: var(--dark-blue);
+    display: block;
+    padding: 10px 2vw;
+    width: 90vw;
+    font-size: 13px;
+}
+.grid-footer i {
+    font-size: 20px;
+}
+.grid-footer i a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+.grid-footer p:nth-child(2) {
+    grid-column: 1/span 3;
+    grid-row: 2/3;
+}
+.grid-footer p:nth-child(3) {
+    grid-column: 1/span 3;
+    grid-row: 3/4;
+}
+.grid-footer p:nth-child(4) {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+}
+/* .grid-footer:nth-child(3) {
+    grid-column: 1/span 3;
+    grid-row: 3/4;
+}
+.grid-footer:nth-child(4) {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+} */
+
+
+
+
+
